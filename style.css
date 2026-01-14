@@ -12,8 +12,7 @@ body {
 }
 
 .container {
-    width: 50vw;
-    height: 400px;
+    width: 40vw;
     border-radius: 10px;
     box-shadow: 0 1px 10px rgba(16, 115, 42, 0.2);
     display: flex;
@@ -25,7 +24,22 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+}
+
+.top-grid h1 {
+    font-size: 25px;
+    color: hsl(179, 62%, 43%);
+}
+
+.thirty-days {
+    color: hsl(71, 73%, 54%);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.access {
+    color: hsl(218, 22%, 67%);
 }
 
 .subscriptions div {
@@ -37,6 +51,17 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+.monthly {
+    color: white;
+    background-color: hsl(179, 62%, 43%);
+    height: 100%;
+}
+
+.why-us {
+    color: white;
+    background-color: hsl(218, 22%, 67%);
+}
+
 @media (max-width: 550px) {
     .subscriptions {
         grid-template-columns: 1fr;
@@ -44,7 +69,6 @@ body {
 
     .container {
         width: 80vw;
-        height: 80vh;
         justify-content: center;
     }
 }
