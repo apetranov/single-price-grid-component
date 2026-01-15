@@ -52,6 +52,9 @@ body {
 }
 
 .monthly {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     color: white;
     background-color: hsl(179, 62%, 43%);
     height: 100%;
@@ -60,6 +63,49 @@ body {
 .why-us {
     color: white;
     background-color: hsl(218, 22%, 67%);
+}
+
+.sub-type {
+    font-weight: 600;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dollar-price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.price-period {
+    color: hsl(0, 0%, 80%);
+}
+
+.monthly-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:active {
+    opacity: 0.5;
 }
 
 @media (max-width: 550px) {
