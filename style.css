@@ -3,8 +3,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: scroll;
     font-family: Karla, Arial;
+    padding: 1rem;
 }
 
 * {
@@ -123,6 +123,8 @@ button:active {
 .reasons {
     color: hsl(0, 0%, 92%);
 }
+
+
 
 @media (max-width: 550px) {
     .subscriptions {
