@@ -1,8 +1,10 @@
 body {
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    overflow: scroll;
+    font-family: Karla, Arial;
 }
 
 * {
@@ -12,7 +14,6 @@ body {
 }
 
 .container {
-    width: 40vw;
     border-radius: 10px;
     box-shadow: 0 1px 10px rgba(16, 115, 42, 0.2);
     display: flex;
@@ -58,11 +59,20 @@ body {
     color: white;
     background-color: hsl(179, 62%, 43%);
     height: 100%;
+    border-radius: 0 0 0 10px;
 }
 
 .why-us {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     color: white;
     background-color: hsl(218, 22%, 67%);
+    border-radius: 0 0 10px 0;
+}
+
+.question {
+    font-weight: 600;
 }
 
 .sub-type {
@@ -81,7 +91,7 @@ body {
 }
 
 .price-period {
-    color: hsl(0, 0%, 80%);
+    color: hsl(0, 0%, 92%);
 }
 
 .monthly-text {
@@ -94,10 +104,12 @@ button {
     background-color: hsl(71, 73%, 54%);
     border: none;
     color: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     transition: opacity 0.2s;
     cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 button:hover {
@@ -108,6 +120,10 @@ button:active {
     opacity: 0.5;
 }
 
+.reasons {
+    color: hsl(0, 0%, 92%);
+}
+
 @media (max-width: 550px) {
     .subscriptions {
         grid-template-columns: 1fr;
@@ -116,5 +132,13 @@ button:active {
     .container {
         width: 80vw;
         justify-content: center;
+    }
+
+    .why-us {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .monthly {
+        border-radius: 0;
     }
 }
